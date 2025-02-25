@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ramadan Kareem</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section id="particles-js">
+		<div class="text">
+			<h1><span>from Fady Basem</span></h1>
+			<h2>Ramadan Kareem</h2>
+			<h3>To You & Your Family!</h3>
+			<div class="mosque"></div>			
+		</div>
+	</section>
+  <iframe id="youtube-video" width="0" height="0" src="https://www.youtube.com/embed/xtRoFhRzFAs?autoplay=1&mute=1" allow="autoplay"></iframe>
+
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let video = document.getElementById('youtube-video');
+
+        
+        document.body.addEventListener('click', function () {
+            video.src = "https://www.youtube.com/embed/xtRoFhRzFAs?autoplay=1";
+        }, { once: true });
+    });
+  </script>
+
+</body>
+</html>
